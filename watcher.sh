@@ -16,7 +16,7 @@ if [[ -z "${COMMAND}" ]]; then
 fi
 
 while true; do
-  inotifywait -r -e ""${EVENTS}"" "${DIRECTORY}"
+  inotifywait -r -e "${EVENTS}" "${DIRECTORY}"
   eval "${COMMAND}"
   sleep 1
 done

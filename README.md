@@ -16,7 +16,7 @@ services:
       	- COMMAND=bash /watch-dir.sh
       	- volumes:
       	    - "/home/user/my_dir_to_watch:/my_dir-to_watch/"
-		    - "/home/user/watch-dir.sh:/watch-dir.sh"
+            - "/home/user/watch-dir.sh:/watch-dir.sh"
 ```
 
 2. **command / script**
@@ -27,7 +27,7 @@ echo "An event has occurred with a file in the directory being watched!"
 ```
 
 # authors
-* [Anmol Brar](mailto:hey@anmolbrar.ca?subject=[Notify And Bash])
+* [Anmol Brar](mailto:hey@anmolbrar.ca?subject=[notify-and-bash])
 
 # license
 this project is licensed underneath the [mit license](https://github.com/brarsanmol/notify-and-bash/LICENSE).
