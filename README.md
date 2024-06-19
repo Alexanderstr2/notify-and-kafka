@@ -8,8 +8,8 @@
 version: "3.8"
 
 services:
-    image: brarsanmol/notify-and-bash:latest
-    container_name: notify-and-bash
+    image: alexanderstr2/notify-and-kafka:latest
+    container_name: notify-and-kafka
     environment:
       	- EVENTS=close_write
       	- DIRECTORY=/my_dir_to_watch/
@@ -28,6 +28,7 @@ echo "An event has occurred with a file in the directory being watched!"
 
 # authors
 * [Anmol Brar](mailto:hey@anmolbrar.ca?subject=[notify-and-bash])
+* [Alexander Stratmoen](mailto:hello@alexanderstratmoen.ca?subject=[notify-and-kafka])
 
 # license
-this project is licensed underneath the [mit license](https://github.com/brarsanmol/notify-and-bash/LICENSE).
+this project is licensed underneath the [mit license](https://github.com/Alexanderstr2/notify-and-kafka/LICENSE).
