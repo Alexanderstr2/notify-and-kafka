@@ -1,6 +1,6 @@
 # notify-and-Kafka 🔊
-> watch a directory and push a new event to a Kafka topic!
-> If looking to trigger an arbitrary shell command take a look at [notify-and-bash](https://github.com/brarsanmol/notify-and-bash) 
+> Watch a directory and push a new event to a Kafka topic!
+If looking to trigger an arbitrary shell command take a look at [notify-and-bash](https://github.com/brarsanmol/notify-and-bash) 
 
 # installation
 
