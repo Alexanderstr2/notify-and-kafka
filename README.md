@@ -1,5 +1,5 @@
-# notify-and-bash 🔊
-> watch a directory and execute a command or shell script when events occur!
+# notify-and-Kafka 🔊
+> watch a directory and push a new event to a Kafka topic!
 
 # installation
 
