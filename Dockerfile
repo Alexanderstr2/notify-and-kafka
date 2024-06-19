@@ -10,6 +10,5 @@ RUN chmod +x /watcher.sh
 ENV KAFKA_BROKERS=localhost:9092
 ENV KAFKA_TOPIC=default_topic
 ENV EVENTS=modify,create,delete
-ENV DIRECTORY=/data
 
 CMD ["/watcher.sh"]
