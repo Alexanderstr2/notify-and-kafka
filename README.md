@@ -21,13 +21,6 @@ services:
             - "/home/user/watch-dir.sh:/watch-dir.sh"
 ```
 
-2. **command / script**
-```bash
-#!/bin/bash
-
-echo "An event has occurred with a file in the directory being watched!"
-```
-
 # authors
 * [Anmol Brar](mailto:hey@anmolbrar.ca?subject=[notify-and-bash])
 * [Alexander Stratmoen](mailto:hello@alexanderstratmoen.ca?subject=[notify-and-kafka])
