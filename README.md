@@ -11,7 +11,9 @@ services:
     image: alexanderstr2/notify-and-kafka:latest
     container_name: notify-and-kafka
     environment:
-      	- EVENTS=close_write
+        - KAFKA_TOPIC=default_topic
+        - KAFKA_BROKERS=localhost:9092
+        - EVENTS=modify,create,delete
       	- DIRECTORY=/my_dir_to_watch/
       	- COMMAND=bash /watch-dir.sh
       	- volumes:
