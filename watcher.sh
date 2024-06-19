@@ -29,8 +29,13 @@ fi
 # Main loop to watch directory and send events to Kafka
 while true; do
   inotifywait -r -e "${EVENTS}" "${DIRECTORY}" | while read path action file; do
-    echo "Event $action occurred on $file in $path" | \
-    kafkacat -b "${KAFKA_BROKERS}" -t "${KAFKA_TOPIC}" -P
+    # Create a JSON object w/ event
+    json_output=$(jq -n \
+                  --arg path "$path" \
+                  --arg action "$action" \
+                  --arg file "$file" \
+                  '{path: $path, action: $action, file: $file}')
+    echo "$json_output" | kafkacat -b "${KAFKA_BROKERS}" -t "${KAFKA_TOPIC}" -P
   done
   sleep 1
 done
